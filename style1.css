@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+.container {
+    height: 100vh;
+    background-image: url("./assets/bg.png");
+    background-size: 100% 100%;
+  }
+
+.navbar{
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+.navbar div{
+    float: left;
+    color: white;
+}
+
+.navbar div:last-child{
+    float: right;
+}
+
+.navbar div:first-child img {
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.navbar div:first-child {
+    position: relative;
+    margin-right: 100px;
+}
+
+.navbar div:first-child::after {
+    position:absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    margin-left: 50px;
+    background-color: white;
+}
+
+.button-small {
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-top: 7px;
+    background-color: #ba0cc5;
+    color: white;
+    border-radius: 7px;
+}
+
+.navbar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.list-item {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.list-item:hover::after {
+    position: absolute;
+    content: "v";
+    height: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+
+}
+
+
+.hero {
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.container section:last-child{
+    position: relative;
+    height: 87vh;
+    background-image: url(/assets/bg.png);
+    background-size: cover
+}
+
+.hero-heading {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+.hero-description {
+    color: white;
+    text-align:center;
+}
+
+.button-large{
+    padding: 10px 30px;
+    color: white;
+    background-color: #ba0cc5;
+    border-radius: 7px;
+    border: none;
+    margin-left: 35%;
+}
+
+
